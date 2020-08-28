@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "ProductSans";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("../fonts/ProductSansBold.woff") format("woff"),
-    url("../fonts/ProductSansBold.woff2") format("woff2");
+  font-family: "ProductSans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ProductSansBold.woff") format("woff"),
+  url("../fonts/ProductSansBold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "ProductSans";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    
-    src: url("../fonts/ProductSansRegular.woff") format("woff"),
-    url("../fonts/ProductSansRegular.woff2") format("woff2");
+  font-family: "ProductSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  
+  src: url("../fonts/ProductSansRegular.woff") format("woff"),
+  url("../fonts/ProductSansRegular.woff2") format("woff2");
 }
 
 html {
@@ -30,5 +30,76 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-family: "ProductSans", "Arial", sans-serif;
+  font-size: 16px;
+  height: 1500px;
+}
 
+.container {
+  max-width: 1148px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-icon {
+  width: 59px;
+  height: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.nav-list-item {
+ padding: 16px;
+ font-size: 15px;
+}
+
+.nav-list-item a{
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list-item:hover{
+  box-shadow: 0 3px 0 #222;
+}
+
+.nav-list-item:active{
+  box-shadow: none;
+  background-color: rgba(25, 25, 25, 0.7);
+}
+
+.nav-list-item a:active{
+  color: #fff;
+}
+
+.tel-number{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #00bafc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
 }
