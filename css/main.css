@@ -77,18 +77,18 @@ body {
 .sub-menu{
   position: absolute;
   width: 124px;
-  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
   top: 100%;
   left: -20px;
   background-color: white;
-  
+  transform: scaleX(0);
+  transition: all .2s ease;
 }
 
 .has-nav-list:hover .sub-menu {
-  display: block;
+  transform: scaleX(1);
 }
 
 .sub-menu-item {
