@@ -90,22 +90,24 @@ body {
   padding: 0;
   list-style-type: none;
   top: 100%;
-  left: -20px;
+  left: -15%;
   background-color: #fff;
-  transform: scaleY(0);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateX(-50%);
+  transform: scale(0);
   transform-origin: center  top;
   transition: all .1s ease;
 }
 
 .sub-menu .sub-menu-item{
-  transform: scaleY(0);
+  transform: scale(0);
   transform-origin: center top;
   transition: all .03s ease;
 }
 
 .has-nav-list:hover .sub-menu,
 .has-nav-list:hover .sub-menu .sub-menu-item{
-  transform: scaleY(1);
+  transform: scale(1);
 }
 
 .sub-menu-item {
@@ -145,6 +147,7 @@ body {
 .tel-number{
   display: inline-block;
   text-decoration: none;
+  white-space: nowrap;
   color: #fff;
   padding: 8px 16px;
   background-color: #00bafc;
