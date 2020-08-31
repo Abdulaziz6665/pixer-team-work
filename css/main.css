@@ -321,6 +321,7 @@ body {
 
 .section-link{
   text-align: center;
+  margin-bottom: 112px;
 }
 .normal-link{
   margin-left: 35px;
@@ -328,4 +329,64 @@ body {
   border-bottom: 2px solid #00bafc;
   text-decoration: none; 
   color: #00bafc;
+}
+/* table container tugadi */
+
+.work-title{
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.work-info{
+  line-height: 24px;
+  margin: 0;
+}
+
+.work-list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 832px;
+}
+
+.work-wrapper{
+  width: 500px;
+}
+
+.work-list-left-side::before,
+.work-list-right-side::after{
+  display: block;
+  width: 300px;
+  height: 277px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+
+.work-list-img1::before{
+  background-image: url(../img/talablar.png);
+}
+.work-list-img2::after{
+  background-image: url(../img/taklif-yechimi.png);
+}
+.work-list-img3::before{
+  background-image: url(../img/loyihaga-vaqt.png);
+}
+.work-list-img4::after{
+  background-image: url(../img/alo-sifat.png);
+}
+.work-list-img5::before{
+  background-image: url(../img/podderjka.png);
 }
