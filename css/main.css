@@ -33,22 +33,24 @@ body {
   margin-top: 49px;
   font-family: "ProductSans", "Arial", sans-serif;
   font-size: 16px;
-  height: 1500px;
+  height: 3500px;
 }
 
-.button{
+.order-link{
   display: inline-block;
   border-radius: 5px;
+  border: none;
   padding: 8px 16px;
   color: #fff;
   background-color: #00bafc;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.button:hover{
+.order-link:hover{
   background-color: rgba(0, 186, 252, 0.8);
 }
-.button:active{
+.order-link:active{
   background-color: rgba(0, 186, 252, 0.6);
 }
 
@@ -235,6 +237,7 @@ body {
 .table-container{
   margin-left: -35px;
   margin-right: -35px;
+  margin-bottom: -48px;
 }
 
 .table-heading{
@@ -321,8 +324,10 @@ body {
 
 .section-link{
   text-align: center;
-  margin-bottom: 112px;
+  margin-top: 40px;
+  margin-bottom: 56px;
 }
+
 .normal-link{
   margin-left: 35px;
   padding-bottom: 3px;
@@ -356,7 +361,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   width: 832px;
 }
 
@@ -378,15 +384,133 @@ body {
 .work-list-img1::before{
   background-image: url(../img/talablar.png);
 }
+
 .work-list-img2::after{
   background-image: url(../img/taklif-yechimi.png);
 }
+
 .work-list-img3::before{
   background-image: url(../img/loyihaga-vaqt.png);
 }
+
 .work-list-img4::after{
   background-image: url(../img/alo-sifat.png);
 }
+
 .work-list-img5::before{
   background-image: url(../img/podderjka.png);
+}
+
+/* table container2 tugadi */
+
+.order-section{
+  background-color: #00BAFC;
+  padding: 56px 0 64px;
+  color: #fff;
+}
+
+.order-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 348px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.label-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.label-box input,
+.label-box select{
+  padding-left: 15px;
+}
+
+.label-box *{
+  width: 300px;
+  height: 56px;
+  background-color: #f3f3f3;
+  border: none;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.button{
+  width: 155px;
+}
+/* order section tugadi */
+
+.footer-side{
+ background-color: #191919;
+ color: #fff;
+ padding: 56px 0;
+}
+
+.footer-wrapper{
+  display: flex;
+}
+
+.footer-heading{
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer-text{
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer-left-side{
+  width: 320px;
+  margin-right: 200px;
+}
+
+.footer-middle-side{
+  margin-right: 200px;
+}
+
+.footer-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list-item{
+  margin-bottom: 8px;
+}
+
+.footer-list-item > a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-media-list > a{
+ display: flex;
+ align-items: center;
+}
+
+.telegram .tg{
+  margin-right: 10px;
+}
+
+.facebook .fb{
+  margin-right: 10px;
+}
+
+.instagram .ins{
+  margin-right: 10px;
+}
+
+.footer-list-item > a:hover{
+  color: #00bafc;
+}
+
+.footer-list-item > a:active{
+opacity: 0.6;
 }
