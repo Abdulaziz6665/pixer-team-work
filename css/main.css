@@ -120,6 +120,7 @@ body {
   transform: scaleY(0);
   transform-origin: center  top;
   transition: all .1s ease;
+  overflow: hidden;
 }
 
 .sub-menu .sub-menu-item{
@@ -173,7 +174,6 @@ body {
 .nav-list-item:active{
   box-shadow: none;
 }
-
 /* ===================================== */
 
 .nav-list-item > a:active{
