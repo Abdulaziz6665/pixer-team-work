@@ -33,7 +33,6 @@ body {
   margin-top: 49px;
   font-family: "ProductSans", "Arial", sans-serif;
   font-size: 16px;
-  height: 3500px;
 }
 
 .order-link{
@@ -513,4 +512,107 @@ body {
 
 .footer-list-item > a:active{
 opacity: 0.6;
+}
+
+
+/* =========================== */
+/*        service.html */
+/* =========================== */
+.services-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: #fff;
+}
+.service-wrapper{
+  width: 800px;
+  text-align: center;
+}
+.service-wrapper h1,
+.service-wrapper p{
+ margin: 0;
+}
+.service-wrapper p{
+  margin-top: 16px;
+  line-height: 24px;
+}
+.work{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f4f4f4;
+}
+.work-list,
+.work-sub-list{
+  margin: 0;
+  padding: 0;
+}
+.work-sub-list{
+  margin-bottom: 16px;
+}
+.work-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 804px;
+  padding: 32px;
+  margin-bottom: 64px;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+.work-list-item-left-side{
+  width: 500px;
+}
+.left-side-title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 26px;
+}
+.left-side-texts{
+  margin: 0;
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+.work-sub-list-item{
+  list-style-type: none;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.work-section-link{
+  text-align: left;
+  margin: 0;
+}
+.work-list-item::before{
+  content: "";
+  display: block;
+  width: 200px;
+  height: 153px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.work-sub-list-item::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #00bafc;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.image-work-list1::before{
+  background-image: url(../img/create-website.png);
+}
+.image-work-list2::before{
+  background-image: url(../img/telegram-bot.png);
+}
+.image-work-list3::before{
+  background-image: url(../img/smm-social.png);
+}
+.image-work-list4::before{
+  background-image: url(../img/grafic-design.png);
+}
+.image-work-list5::before{
+  background-image: url(../img/crm-analise.png);
 }
